@@ -111,7 +111,7 @@
         }
       }
       
-      .intro-paragrapg-backButton {
+      .intro-paragraph-backButton {
         width: 3rem;
         display: block;
         border-radius: 100%;
@@ -198,6 +198,7 @@
               button.addEventListener('click',(e) => {
                   e.preventDefault();
                   let sectionParagraph   = document.querySelector('div.intro-paragraph');
+		  section.removeChild(sectionParagraph);
                   section.appendChild(resolvedMessage());
               });
           }
